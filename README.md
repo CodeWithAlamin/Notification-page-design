@@ -14,7 +14,7 @@ Users should be able to:
 ### Links
 
 - [👉Live Site Preview👈](https://notification-page-design.netlify.app/)
-<br>
+  <br>
 
 - [👉Frontendmentor👈](https://www.frontendmentor.io/solutions/notifications-page-responsive-tDAU6NzCHa)
 
@@ -29,9 +29,9 @@ Users should be able to:
 
 ## Author
 
-- LinkedIn - [@CodePapa360](https://www.linkedin.com/in/codepapa360)
-- Twitter - [@CodePapa360](https://www.twitter.com/CodePapa360)
-- Frontend Mentor - [@CodePapa360](https://www.frontendmentor.io/profile/CodePapa360)
+- LinkedIn - [@CodeWithAlamin](https://www.linkedin.com/in/CodeWithAlamin)
+- Twitter - [@CodeWithAlamin](https://www.twitter.com/CodeWithAlamin)
+- Frontend Mentor - [@CodeWithAlamin](https://www.frontendmentor.io/profile/CodeWithAlamin)
 
 ### Screenshot
 
@@ -39,6 +39,6 @@ Users should be able to:
 
 <p><img align="center" src="design/Notifications page solution screenshot - desktop preview.png"/></p>
 
-#### Mobile preview 
+#### Mobile preview
 
 <p><img align="center" width="30%" src="design/Notifications page solution screenshot - mobile preview.png"/></p>

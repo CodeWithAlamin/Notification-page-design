@@ -1,124 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="This is a solution to the Notifications page challenge on Frontend Mentor"
+    />
+    <meta
+      property="og:title"
+      content="Notifications page design - Frontend Mentor"
+    />
+    <meta
+      property="og:description"
+      content="This is a solution to the Notifications page challenge on Frontend Mentor coded by Alamin"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/CodeWithAlamin/Notification-page-design/main/design/Notifications%20page%20solution%20screenshot%20-%20desktop%20preview.png"
+    />
 
-    <meta name="description" content="This is a solution to the Notifications page challenge on Frontend Mentor" />
-    <meta property="og:title" content="Notifications page design - Frontend Mentor" />
-    <meta property="og:description" content="This is a solution to the Notifications page challenge on Frontend Mentor coded by Alamin" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/CodePapa360/Notification-page-design/main/design/Notifications%20page%20solution%20screenshot%20-%20desktop%20preview.png" />
-
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Frontend Mentor | Notifications page</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <main>
-        <div class="top-container">
-            <div class="header">
-                <h1>Notifications <span class="notification-counts">3</span></h1>
-                <button class="notification-reader">Mark all as read</button>
-            </div>
-
-            <ul class="notifications-container">
-                <li class="notification-wrapper unread-notification">
-                    <div class="nofication-contents">
-                        <img class="profile-pic" src="/assets/images/avatar-mark-webber.webp" alt="Profile picture of Mark">
-                        <div class="description">
-                            <p class="unread-indicator"><a href="https://github.com/CodePapa360" target="_blank" class="username">Mark Webber</a> reacted to your recent post My
-                                first tournament today!</p>
-                            <p class="period-of-time">1m ago</p>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="notification-wrapper unread-notification">
-                    <div class="nofication-contents">
-                        <img class="profile-pic" src="/assets/images/avatar-angela-gray.webp" alt="Profile picture of Angela">
-                        <div class="description">
-                            <p class="unread-indicator"><a href="https://github.com/CodePapa360" target="_blank" class="username">Angela Gray</a> followed you</p>
-                            <p class="period-of-time">5m ago</p>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="notification-wrapper unread-notification">
-                    <div class="nofication-contents">
-                        <img class="profile-pic" src="/assets/images/avatar-jacob-thompson.webp" alt="Profile picture of Jacob">
-                        <div class="description">
-                            <p class="unread-indicator"><a href="https://github.com/CodePapa360" target="_blank" class="username">Jacob Thompson</a> has joined your group <a href="https://github.com/CodePapa360" target="_blank" class="source-name">Chess Club</a></p>
-                            <p class="period-of-time">1 day ago</p>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="notification-wrapper">
-                    <div class="nofication-contents">
-                        <img class="profile-pic" src="/assets/images/avatar-rizky-hasanuddin.webp" alt="Profile picture of Rizky">
-                        <div class="description">
-                            <p><a href="https://github.com/CodePapa360" target="_blank" class="username">Rizky Hasanuddin</a> sent you a private message</p>
-                            <p class="period-of-time">5 days ago</p>
-                        </div>
-                    </div>
-                    <div class="expended-note-wrapper">
-                        <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
-                            I'm already having lots of fun and improving my game.</p>
-                    </div>
-                </li>
-
-                <li class="notification-wrapper">
-                    <div class="nofication-contents">
-                        <img class="profile-pic" src="/assets/images/avatar-kimberly-smith.webp" alt="Profile picture of Kimberly">
-                        <div class="description">
-                            <p><a href="https://github.com/CodePapa360" target="_blank" class="username">Kimberly Smith</a> commented on your picture</p>
-                            <p class="period-of-time">1 week ago</p>
-                        </div>
-                        <img class="post-thumbnail" src="assets/images/image-chess.webp" alt="Chess image">
-                    </div>
-                </li>
-
-                <li class="notification-wrapper">
-                    <div class="nofication-contents">
-                        <img class="profile-pic" src="/assets/images/avatar-nathan-peterson.webp" alt="Profile picture of Nathan">
-                        <div class="description">
-                            <p><a href="https://github.com/CodePapa360" target="_blank" class="username">Nathan Peterson</a> reacted to your recent post <strong class="highlight-text">5 end-game strategies to increase your win rate</strong></p>
-                            <p class="period-of-time">2 weeks ago</p>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="notification-wrapper">
-                    <div class="nofication-contents">
-                        <img class="profile-pic" src="/assets/images/avatar-anna-kim.webp" alt="Profile picture of Anna">
-                        <div class="description">
-                            <p><a href="https://github.com/CodePapa360" target="_blank" class="username">Anna Kim</a> left the group <a href="https://github.com/CodePapa360" target="_blank" class="source-name">Chess
-                                    Club</a>
-                            </p>
-                            <p class="period-of-time">2 weeks ago</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+      <div class="top-container">
+        <div class="header">
+          <h1>Notifications <span class="notification-counts">3</span></h1>
+          <button class="notification-reader">Mark all as read</button>
         </div>
+
+        <ul class="notifications-container">
+          <li class="notification-wrapper unread-notification">
+            <div class="nofication-contents">
+              <img
+                class="profile-pic"
+                src="/assets/images/avatar-mark-webber.webp"
+                alt="Profile picture of Mark"
+              />
+              <div class="description">
+                <p class="unread-indicator">
+                  <a
+                    href="https://github.com/CodeWithAlamin"
+                    target="_blank"
+                    class="username"
+                    >Mark Webber</a
+                  >
+                  reacted to your recent post My first tournament today!
+                </p>
+                <p class="period-of-time">1m ago</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="notification-wrapper unread-notification">
+            <div class="nofication-contents">
+              <img
+                class="profile-pic"
+                src="/assets/images/avatar-angela-gray.webp"
+                alt="Profile picture of Angela"
+              />
+              <div class="description">
+                <p class="unread-indicator">
+                  <a
+                    href="https://github.com/CodeWithAlamin"
+                    target="_blank"
+                    class="username"
+                    >Angela Gray</a
+                  >
+                  followed you
+                </p>
+                <p class="period-of-time">5m ago</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="notification-wrapper unread-notification">
+            <div class="nofication-contents">
+              <img
+                class="profile-pic"
+                src="/assets/images/avatar-jacob-thompson.webp"
+                alt="Profile picture of Jacob"
+              />
+              <div class="description">
+                <p class="unread-indicator">
+                  <a
+                    href="https://github.com/CodeWithAlamin"
+                    target="_blank"
+                    class="username"
+                    >Jacob Thompson</a
+                  >
+                  has joined your group
+                  <a
+                    href="https://github.com/CodeWithAlamin"
+                    target="_blank"
+                    class="source-name"
+                    >Chess Club</a
+                  >
+                </p>
+                <p class="period-of-time">1 day ago</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="notification-wrapper">
+            <div class="nofication-contents">
+              <img
+                class="profile-pic"
+                src="/assets/images/avatar-rizky-hasanuddin.webp"
+                alt="Profile picture of Rizky"
+              />
+              <div class="description">
+                <p>
+                  <a
+                    href="https://github.com/CodeWithAlamin"
+                    target="_blank"
+                    class="username"
+                    >Rizky Hasanuddin</a
+                  >
+                  sent you a private message
+                </p>
+                <p class="period-of-time">5 days ago</p>
+              </div>
+            </div>
+            <div class="expended-note-wrapper">
+              <p>
+                Hello, thanks for setting up the Chess Club. I've been a member
+                for a few weeks now and I'm already having lots of fun and
+                improving my game.
+              </p>
+            </div>
+          </li>
+
+          <li class="notification-wrapper">
+            <div class="nofication-contents">
+              <img
+                class="profile-pic"
+                src="/assets/images/avatar-kimberly-smith.webp"
+                alt="Profile picture of Kimberly"
+              />
+              <div class="description">
+                <p>
+                  <a
+                    href="https://github.com/CodeWithAlamin"
+                    target="_blank"
+                    class="username"
+                    >Kimberly Smith</a
+                  >
+                  commented on your picture
+                </p>
+                <p class="period-of-time">1 week ago</p>
+              </div>
+              <img
+                class="post-thumbnail"
+                src="assets/images/image-chess.webp"
+                alt="Chess image"
+              />
+            </div>
+          </li>
+
+          <li class="notification-wrapper">
+            <div class="nofication-contents">
+              <img
+                class="profile-pic"
+                src="/assets/images/avatar-nathan-peterson.webp"
+                alt="Profile picture of Nathan"
+              />
+              <div class="description">
+                <p>
+                  <a
+                    href="https://github.com/CodeWithAlamin"
+                    target="_blank"
+                    class="username"
+                    >Nathan Peterson</a
+                  >
+                  reacted to your recent post
+                  <strong class="highlight-text"
+                    >5 end-game strategies to increase your win rate</strong
+                  >
+                </p>
+                <p class="period-of-time">2 weeks ago</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="notification-wrapper">
+            <div class="nofication-contents">
+              <img
+                class="profile-pic"
+                src="/assets/images/avatar-anna-kim.webp"
+                alt="Profile picture of Anna"
+              />
+              <div class="description">
+                <p>
+                  <a
+                    href="https://github.com/CodeWithAlamin"
+                    target="_blank"
+                    class="username"
+                    >Anna Kim</a
+                  >
+                  left the group
+                  <a
+                    href="https://github.com/CodeWithAlamin"
+                    target="_blank"
+                    class="source-name"
+                    >Chess Club</a
+                  >
+                </p>
+                <p class="period-of-time">2 weeks ago</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </main>
 
     <footer>
-        <div class="attribution-wrapper">
-            <p class="attribution">
-                Coded by <a href="https://github.com/CodePapa360" target="_blank">Alamin</a><br>
-                Challenge by <a href="https://www.frontendmentor.io/profile/CodePapa360" target="_blank">Frontend
-                    Mentor</a>
-            </p>
-        </div>
+      <div class="attribution-wrapper">
+        <p class="attribution">
+          Coded by
+          <a href="https://github.com/CodeWithAlamin" target="_blank">Alamin</a
+          ><br />
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io/profile/CodeWithAlamin"
+            target="_blank"
+            >Frontend Mentor</a
+          >
+        </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
